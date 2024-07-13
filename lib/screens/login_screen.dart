@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -29,10 +30,10 @@ class LoginScreen extends StatelessWidget {
               
               textAlign: TextAlign.center,
             ),
-            const Spacer(flex: 1),
+            const Spacer(flex: 2),
             ElevatedButton.icon(
               onPressed: () {
-                // Placeholder for Google sign-in action
+                context.go('/home');
               },
               icon: const Icon(Icons.login),
               label: const Text('Sign in with Google'),

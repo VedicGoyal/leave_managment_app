@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:leave_management_app/screens/login_screen.dart';
+import 'package:leave_management_app/routes/routes.dart';
+// import 'package:leave_management_app/screens/login_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,12 +11,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'LNMIIT Leave Management System',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const LoginScreen(),
+    return MaterialApp.router(
+      routerConfig: router,
+      title: 'Leave Management App',
     );
   }
   }
