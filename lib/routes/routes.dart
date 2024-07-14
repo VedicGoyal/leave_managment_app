@@ -6,6 +6,9 @@ import 'package:leave_management_app/screens/login_screen.dart';
 
 final router = GoRouter(
   routes: [
+
+    // Something related to route protection
+    // Auth-Guard: Authentication --> routes 
     GoRoute(
       path: '/',
       builder: (context, state) => const LoginScreen(),
