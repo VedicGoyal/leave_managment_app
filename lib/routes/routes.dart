@@ -3,6 +3,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:leave_management_app/screens/home_screen.dart';
 import 'package:leave_management_app/screens/login_screen.dart';
+import 'package:leave_management_app/screens/apply_leave_page.dart';
 
 final router = GoRouter(
   routes: [
@@ -17,7 +18,10 @@ final router = GoRouter(
       path: '/home',
       builder: (context, state) => const HomeScreen(),
     ),
-
+    GoRoute(
+      path: '/apply-leave',
+      builder: (context, state) => const LeaveApplicationHomePage(),
+    ),
     // Add more routes here as needed
   ],
 );
